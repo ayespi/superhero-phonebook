@@ -6,7 +6,8 @@ var superHeroPhonebook = angular.module("superHeroPhonebook",[]);
 
 superHeroPhonebook.controller("PhonebookController",phonebookControl);
 function phonebookControl(){
-  
+  var vm = this;
+  vm.greeting = "Good Evening";
 }
 
 var superheroList = [
