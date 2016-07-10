@@ -1,5 +1,14 @@
 var superHeroPhonebook = angular.module("superHeroPhonebook",[]);
 
+// myApp.controller('GreetingController', ['$scope', function($scope) {
+//   $scope.greeting = 'Hola!';
+// }]);
+
+superHeroPhonebook.controller("PhonebookController",phonebookControl);
+function phonebookControl(){
+  
+}
+
 var superheroList = [
   {
     name: "Spiderman",
