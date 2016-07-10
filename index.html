@@ -26,11 +26,17 @@
       <tr>
         <th>Name:</th>
         <th>Number:</th>
-        <th></th>
+        <th>Group:</th>
+        <th>View Image:</th>
       </tr>
     </thead>
-    <tbody>
-      {{vm.greeting}}
+    <tbody> {{vm.greeting}}
+      <tr ng-repeat="heroes in vm.phoneList">
+        <td>{{heroes.name}}</td>
+        <td>{{heroes.number}}</td>
+        <td>{{heroes.group}}</td>
+        <td><button></button></td>
+      </tr>
     </tbody>
   </table>
 </div>

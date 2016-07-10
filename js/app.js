@@ -8,6 +8,7 @@ superHeroPhonebook.controller("PhonebookController",phonebookControl);
 function phonebookControl(){
   var vm = this;
   vm.greeting = "Good Evening";
+  vm.phoneList = superheroList;
 }
 
 var superheroList = [
