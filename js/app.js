@@ -1,3 +1,5 @@
+var superHeroPhonebook = angular.module("superHeroPhonebook",[]);
+
 var superheroList = [
   {
     name: "Spiderman",
