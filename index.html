@@ -19,9 +19,9 @@
     Picture:
   </div>
   <div class="search">
-    Search:
+    <input data-ng-model="vm.filter_on" type="text" class="form-control" placeholder="Search SuperHeroes...">
   </div>
-  <table class="table">
+  <table class="table table-striped table-condensed">
     <thead>
       <tr>
         <th>Name:</th>
@@ -30,8 +30,8 @@
         <th>View Image:</th>
       </tr>
     </thead>
-    <tbody> {{vm.greeting}}
-      <tr ng-repeat="heroes in vm.phoneList">
+    <tbody>
+      <tr ng-repeat="heroes in vm.phoneList | filter: vm.filter_on">
         <td>{{heroes.name}}</td>
         <td>{{heroes.number}}</td>
         <td>{{heroes.group}}</td>
