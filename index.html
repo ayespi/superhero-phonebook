@@ -15,8 +15,8 @@
 <body ng-controller="PhonebookController as vm">
   <div class="container">
   <h1>Superheroes</h1>
-  <div class="picture">
-    Picture:
+  <div id="imageArea" class="picture">
+    <img ng-src="{{vm.heroImage}}"/>
   </div>
   <div class="search">
     <input data-ng-model="vm.filter_on" type="text" class="form-control" placeholder="Search SuperHeroes...">
@@ -36,7 +36,7 @@
         <td>{{heroes.name}}</td>
         <td>{{heroes.number}}</td>
         <td>{{heroes.group}}</td>
-        <td><button class="btn btn-default">View Image</button></td>
+        <td><button ng-click="vm.heroImage = heroes.img" class="btn btn-default">View Image</button></td>
       </tr>
     </tbody>
   </table>
